@@ -1,0 +1,23 @@
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int write=0;
+        for(int read=0; read<nums.length;read++)
+        {
+            if (nums[read]!=0)
+            {
+                nums[write]=nums[read];
+                write++;
+            }
+        }
+        while(write<nums.length)
+        {
+            nums[write]=0;
+            write++;
+        }
+    
+    }
+}
+
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
